@@ -1,0 +1,42 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "material": {
+          "certpath": "C:/Users/15009/.ohos/config/openharmony/default_calculator-hm-main_jJdRfkM8i1PTTbCN4-3hSVTnhIpzjrwsSkrwoqkb8Y4=.cer",
+          "storePassword": "0000001B065DC5E63534A5C5D11C02806EF5D2DB7BC90F74CF145092819D803946EADEDE13C0CE3CF893A0",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BFB8514940E87783C77B22A4EC036C851CF6FFAF88FF1C99E515F169A84671B1C446A19881B6A13",
+          "profile": "C:/Users/15009/.ohos/config/openharmony/default_calculator-hm-main_jJdRfkM8i1PTTbCN4-3hSVTnhIpzjrwsSkrwoqkb8Y4=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:/Users/15009/.ohos/config/openharmony/default_calculator-hm-main_jJdRfkM8i1PTTbCN4-3hSVTnhIpzjrwsSkrwoqkb8Y4=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compileSdkVersion": 12,
+        "compatibleSdkVersion": 12,
+        "runtimeOS": "OpenHarmony"
+        // 工程级配置
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
